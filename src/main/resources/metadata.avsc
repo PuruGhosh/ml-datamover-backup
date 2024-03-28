@@ -1,0 +1,192 @@
+{
+	"namespace": "com.xperi.schema.metadata",
+	"type": "record",
+	"name": "AssetMetadata",
+	"fields": [
+		{
+			"name": "asset_uuid",
+			"type":
+			{
+				"type": "string",
+				"avro.java.string": "String"
+			},
+			"default": ""
+		},
+		{
+			"name": "subJobId",
+			"type":
+			{
+				"type": "string",
+				"avro.java.string": "String"
+			},
+			"default": ""
+		},
+		{
+			"name": "operation",
+			"type": {
+				"name": "Operations",
+				"type": "enum",
+				"symbols": [
+					"CREATE",
+					"UPDATE",
+					"DELETE"
+				]
+			}
+		},
+		{
+			"name": "meta_file_name",
+			"type":
+			{
+				"type": "string",
+				"avro.java.string": "String"
+			},
+			"default": ""
+		},
+		{
+			"name": "parameters",
+			"type":
+			{
+				"type": "string",
+				"avro.java.string": "String"
+			},
+			"default": ""
+		},
+		{
+			"name" : "uiPartMetadata",
+			"type" : {
+				"type" : "map",
+				"values": "string"
+			}
+		},
+		{
+			"name":"contentAssetMetadata",
+			"type":
+			{
+				"type": "string",
+				"avro.java.string": "String"
+			},
+			"default": ""
+		},
+		{
+			"name": "filePartMetadata",
+			"type" : {
+				"name":"File",
+				"type":"record",
+				"fields":[
+					{
+						"name":"file_name",
+						"type": {
+							"type": "array",
+							"items": "string"
+						}
+					},
+					{
+						"name":"meta_file_name",
+						"type":
+						{
+							"type": "string",
+							"avro.java.string": "String"
+						},
+						"default": ""
+					},
+					{
+						"name":"owner",
+						"type":
+						{
+							"type": "string",
+							"avro.java.string": "String"
+						},
+						"default": ""
+					},
+					{
+						"name": "metadata_type",
+						"type": {
+							"name": "MetadataType",
+							"type": "enum",
+							"symbols": [
+								"XML",
+								"CSV",
+								"JSON",
+								"TEXT",
+								"UNKNOWN"
+							]
+						},
+						"default": "UNKNOWN"
+					}
+				]
+			}
+		},
+		{
+			"name": "storePartMetadata",
+			"type" : {
+				"name":"Store",
+				"type":"record",
+				"fields":[
+					{
+						"name":"size",
+						"type":"long"
+					},
+					{
+						"name":"contentType",
+						"type":
+						{
+							"type": "string",
+							"avro.java.string": "String"
+						},
+						"default": ""
+					},
+					{
+						"name":"userMetadata",
+						"type" : {
+							"type" : "map",
+							"values": "string"
+						}
+					},
+					{
+						"name":"versionId",
+						"type":
+						{
+							"type": "string",
+							"avro.java.string": "String"
+						},
+						"default": ""
+					},
+					{
+						"name":"key",
+						"type":
+						{
+							"type": "string",
+							"avro.java.string": "String"
+						},
+						"default": ""
+					},
+					{
+						"name":"eTag",
+						"type":
+						{
+							"type": "string",
+							"avro.java.string": "String"
+						},
+						"default": ""
+					},
+					{
+						"name":"sequencer",
+						"type":
+						{
+							"type": "string",
+							"avro.java.string": "String"
+						},
+						"default": ""
+					}
+				]
+			}
+		},
+		{
+			"name": "userRoles",
+			"type": {
+				"type": "array",
+				"items": "string"
+			}
+		}
+	]
+}

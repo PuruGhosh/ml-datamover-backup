@@ -1,0 +1,33 @@
+{
+    "meta-file-name": "labels_new_format.json",
+    "parameters": {},
+    "files": [
+        {
+            "file-name": ["fake-image-1.jpg"],
+            "meta-file-name": "labels1.json",
+            "owner": "test",
+            "metadata": {
+                "label": "sunflowers"
+            },
+            "metadata_type":"JSON"
+        },
+        {
+            "file-name": ["fake-image-2.jpg"],
+            "meta-file-name": "labels2.json",
+            "owner": "test",
+            "metadata": {
+                "label": "dandelion"
+            },
+            "metadata_type":"JSON"
+        },
+        {
+            "file-name": ["file1.png","file2.png"],
+            "meta-file-name": "labels3.json",
+            "owner": "test",
+            "metadata": {
+                "label": "dandelion"
+            },
+            "metadata_type":"JSON"
+        }
+    ]
+}

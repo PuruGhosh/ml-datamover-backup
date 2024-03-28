@@ -1,0 +1,23 @@
+{
+  "namespace": "com.xperi.schema.accumulator",
+  "type": "record",
+  "name": "AccumulatorEvent",
+  "fields": [
+    {
+      "name": "assetId",
+      "type": "string"
+    },
+    {
+      "name": "assetVersionId",
+      "type": "string"
+    },
+    {
+      "name": "elasticMetadataId",
+      "type": "string"
+    },
+    {
+      "name": "subJobId",
+      "type": "string"
+    }
+  ]
+}

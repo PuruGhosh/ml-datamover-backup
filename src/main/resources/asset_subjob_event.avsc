@@ -1,0 +1,48 @@
+{
+  "namespace": "com.xperi.schema.subjobevent",
+  "type": "record",
+  "name": "AssetSubJobEvent",
+  "fields": [
+    {
+      "name": "filePath",
+      "type": {
+        "type": "array",
+        "items": "string"
+      }
+    },
+    {
+      "name": "jobName",
+      "type": "string"
+    },
+    {
+      "name": "metaDataFileUrl",
+      "type": "string"
+    },
+    {
+      "name": "parentJobId",
+      "type": "string"
+    },
+    {
+      "name": "subJobId",
+      "type": "string"
+    },
+    {
+      "name": "subJobType",
+      "type": {
+        "type": "enum",
+        "name": "AssetCategory",
+        "symbols": [
+          "METADATA",
+          "ASSET"
+        ]
+      }
+    },
+    {
+      "name": "userRoles",
+      "type": {
+        "type": "array",
+        "items": "string"
+      }
+    }
+  ]
+}

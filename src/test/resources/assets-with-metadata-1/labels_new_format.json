@@ -1,0 +1,37 @@
+{
+    "meta-file-hash": "7c98d48dc62619fd43a754c1d4af15901b2f8a277d7e2f92353186185884ddaa",
+    "meta-file-name": "labels_new_format.json",
+    "parameters": {},
+    "files": [
+        {
+            "file-hash": "4e3f308ae97aaeb2442693aad82d9b5b8a76ae87b7667ea1e68f609d24ba928c",
+            "file-name": "fake-image-1.jpg",
+            "meta-file-name": "labels1.json",
+            "owner": "test",
+            "metadata": {
+                "label": "sunflowers"
+            },
+            "metadata_type":"JSON"
+        },
+        {
+            "file-hash": "f8c6c30367e262622a0fe1f4fd726bf2f83452cf2dee608d8b3d9263f69d7fd1",
+            "file-name": "fake-image-2.jpg",
+            "meta-file-name": "labels2.json",
+            "owner": "test",
+            "metadata": {
+                "label": "dandelion"
+            },
+            "metadata_type":"JSON"
+        },
+        {
+            "file-hash": "8effc4ffae64cb0c7a140969038e8889626e39ebfb8454c5887dcd14dfcee281",
+            "file-name": "labels.json",
+            "meta-file-name": "labels3.json",
+            "owner": "test",
+            "metadata": {
+                "label": "dandelion"
+            },
+            "metadata_type":"JSON"
+        }
+    ]
+}

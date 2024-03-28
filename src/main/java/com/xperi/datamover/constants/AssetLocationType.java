@@ -1,0 +1,7 @@
+package com.xperi.datamover.constants;
+
+/** This JobStatusConstants enum specifies the Job Status Values */
+public enum AssetLocationType {
+  FOLDER,
+  FILE
+}

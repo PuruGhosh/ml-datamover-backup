@@ -1,0 +1,48 @@
+{
+    "meta-file-name": "labels.json",
+    "parameters": {
+        "compressed": false,
+        "compression": "none"
+    },
+    "files": [
+        {
+            "file-name": [
+                "calico-cat/upper/Image_1.jpg",
+                "calico-cat/upper/Image_2.jpg",
+                "calico-cat/Image_3.jpg"
+            ],
+            "meta-file-name": "labels.json",
+            "owner": "python tester",
+            "metadata": {
+                "label": {
+                    "search queries": [
+                        "calico-cat",
+                        "white-cat"
+                    ]
+                },
+                "source": "bing images",
+                "size": 650,
+                "format": "RGB"
+            }
+        },
+        {
+            "file-name": [
+                "white-cat/Image_1.jpg",
+                "white-cat/Image_2.jpg"
+            ],
+            "meta-file-name": "labels.json",
+            "owner": "python tester",
+            "metadata": {
+                "label": {
+                    "search queries": [
+                        "calico-cat",
+                        "white-cat"
+                    ]
+                },
+                "source": "bing images",
+                "size": 650,
+                "format": "RGB"
+            }
+        }
+    ]
+}
